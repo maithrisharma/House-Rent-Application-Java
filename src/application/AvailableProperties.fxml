@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AvailablePropertyController">
+   <center>
+      <ScrollPane fx:id="sp1" prefHeight="325.0" prefWidth="600.0">
+         <content>
+            <TilePane fx:id="tilePane" alignment="CENTER" layoutX="14.0" prefHeight="398.0" prefWidth="585.0" style="-fx-background-color: lavender;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="20.0" />
+               </padding></TilePane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

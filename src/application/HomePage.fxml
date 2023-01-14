@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <top>
+      <AnchorPane prefHeight="44.0" prefWidth="600.0" style="-fx-background-color: #2D5F6E;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RENTAL PROPERTY MANAGEMENT">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font></Text>
+            <Button fx:id="homePane" layoutX="253.0" layoutY="6.0" mnemonicParsing="false" onAction="#homePaneListener" style="-fx-background-color: linear-gradient(#7ebcea, #2f4b8f),        linear-gradient(#426ab7, #263e75),        linear-gradient(#395cab, #223768); -fx-text-fill: white;" text="Home" />
+            <Button fx:id="registerPane" layoutX="319.0" layoutY="6.0" mnemonicParsing="false" onAction="#registerPaneListener" style="-fx-background-color: linear-gradient(#7ebcea, #2f4b8f),        linear-gradient(#426ab7, #263e75),        linear-gradient(#395cab, #223768); -fx-text-fill: white;" text="Register Customer" />
+            <Button fx:id="propertyPane" layoutX="453.0" layoutY="6.0" mnemonicParsing="false" onAction="#propertyPaneListener" style="-fx-background-color: linear-gradient(#7ebcea, #2f4b8f),        linear-gradient(#426ab7, #263e75),        linear-gradient(#395cab, #223768); -fx-text-fill: white;" text="Property Management" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Pane prefHeight="210.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="137.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO RENTAL PROPERTY MANAGEMENT SYSTEM" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font></Text>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #2D5F6E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="4.0" text="Developed By Maithri" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

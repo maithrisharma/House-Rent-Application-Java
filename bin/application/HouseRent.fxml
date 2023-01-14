@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HouseRentController">
+   <center>
+      <AnchorPane>
+         <children>
+            <ComboBox fx:id="customerList" layoutX="94.0" layoutY="23.0" onAction="#ComboBoxListener" prefWidth="150.0" promptText="Select Customer" />
+            <Label layoutX="26.0" layoutY="27.0" prefHeight="17.0" prefWidth="68.0" text="Customer" />
+            <DatePicker fx:id="startDate" layoutX="94.0" layoutY="60.0" />
+            <DatePicker fx:id="endDate" layoutX="94.0" layoutY="101.0" />
+            <Label layoutX="26.0" layoutY="64.0" text="Start Date" />
+            <Label layoutX="26.0" layoutY="105.0" text="End Date" />
+            <Button fx:id="submit" layoutX="142.0" layoutY="143.0" mnemonicParsing="false" onAction="#submitListener" text="Submit" />
+            <TextArea fx:id="displayArea" layoutX="16.0" layoutY="176.0" prefHeight="176.0" prefWidth="568.0" />
+            <Label fx:id="label1" layoutX="366.0" layoutY="36.0" text="Label" />
+            <Label fx:id="label2" layoutX="366.0" layoutY="73.0" text="Label" />
+            <Label fx:id="label3" layoutX="366.0" layoutY="93.0" text="Label" />
+            <Label layoutX="366.0" layoutY="6.0" text="Property Information">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
